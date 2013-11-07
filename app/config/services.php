@@ -25,7 +25,7 @@ $di->set('url', function() use ($config) {
 */
 
 $di->set('url', function() use ($config) {
-	$url = new UrlResolver();
+	$url = new Phalcon\Mvc\Url();
 	
 	if (preg_match('/Dropbox/', __DIR__)) {
 		$url->setBaseUri('/store-20131106/');
