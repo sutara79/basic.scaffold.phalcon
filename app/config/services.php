@@ -16,11 +16,25 @@ $di = new FactoryDefault();
 /**
  * The URL component is used to generate all kind of urls in the application
  */
+/*
 $di->set('url', function() use ($config) {
 	$url = new UrlResolver();
 	$url->setBaseUri($config->application->baseUri);
 	return $url;
 }, true);
+*/
+
+$di->set('url', function() use ($config) {
+	$url = new UrlResolver();
+	
+	if (preg_match('/Dropbox/', __DIR__)) {
+		$url->setBaseUri('/store-20131106/');
+	} else {
+		$url->setBaseUri('/public/');
+	}
+	return $url;
+}, true);
+
 
 /**
  * Setting up the view component
