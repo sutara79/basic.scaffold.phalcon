@@ -30,7 +30,7 @@ $di->set('url', function() use ($config) {
 	if (preg_match('/Dropbox/', __DIR__)) {
 		$url->setBaseUri('/store-20131106/');
 	} else {
-		$url->setBaseUri('/public/');
+		$url->setBaseUri('/');
 	}
 	return $url;
 }, true);
