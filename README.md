@@ -3,7 +3,7 @@
 PhalconでScaffold機能を試しただけのサンプルプログラムです。
 
 ## Demo
-http://store-20131106.eu1.frbit.net/products
+http://s79-ph-scaffold.eu1.frbit.net/products
 
 ## Environments
 - Phalcon 1.2.4
@@ -12,7 +12,7 @@ http://store-20131106.eu1.frbit.net/products
 ## Author
 - Yuusaku Miyazaki (宮崎 雄策)
 - Mail: toumin.m7@gmail.com
-- Twitter: @sutara_lumpur
+- Twitter: https://twitter.com/sutara_lumpur
 
 ## Lisence
-[New BSD License](http://opensource.org/licenses/BSD-3-Clause)
+New BSD License: http://opensource.org/licenses/BSD-3-Clause
